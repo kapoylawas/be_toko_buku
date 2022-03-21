@@ -1,10 +1,14 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "db_toko_buku",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "bsixvckatybdwy",
+    "password": "21b8df22c3239d5d19c9f6fd390428706d7535e8cddf3d93d35cc1cdb812891f",
+    "database": "d7mdmtb1uhqnr4",
+    "host": "ec2-3-216-221-31.compute-1.amazonaws.com",
+    "port": 5432,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl":{"rejectUnauthorized": false}
+    }
   },
   "test": {
     "username": "root",

@@ -27,8 +27,8 @@ app.use(`${URL}`, uploadImageRouter);
 app.use(`${URL}`, chekoutRouter);
 app.use(`${URL}`, transactionRouter);
 
-app.use('/', (req, res)=>{
-    res.json({message: 'Welcome to api toko buku'});
-});
+// app.use('/', (req, res)=>{
+//     res.json({message: 'Welcome to api toko buku'});
+// });
 
 module.exports = app;
