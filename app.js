@@ -19,9 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', (req, res)=>{
-    res.json({message: 'Welcome to api toko buku'});
-});
+
 
 app.use(`${URL}`, authRouter);
 app.use(`${URL}`, categoriesRouter);
@@ -29,5 +27,9 @@ app.use(`${URL}`, booksRouter);
 app.use(`${URL}`, uploadImageRouter);
 app.use(`${URL}`, chekoutRouter);
 app.use(`${URL}`, transactionRouter);
+
+app.use('/', (req, res)=>{
+    res.json({message: 'Welcome to api toko buku'});
+});
 
 module.exports = app;
